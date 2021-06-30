@@ -27,7 +27,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="password_confirmation" class="form-label">Password</label>
+                <label for="password_confirmation" class="form-label">Confirm Password</label>
                 <input type="password" name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" id="password_confirmation" value="{{ old('password_confirmation') }}">
                 @error('password_confirmation')
                 {{ $message }}
