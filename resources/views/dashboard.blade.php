@@ -9,7 +9,7 @@
             <button type="submit" class="btn btn-primary">Enable Two Factor Auth</button>
         </form>
     @elseif(session('status') == 'two-factor-authentication-enabled')
-        <p>You just enabled two factor authentication, please scan the following QRCode</p>
+        <p>You just enabled two factor authentication, please scan the following QR Code below and then click on logout to re-authenticate</p>
         {!! auth()->user()->twoFactorQrCodeSvg() !!}
     @else
         <h5>Welcome {{ auth()->user()->name }}</h5>
