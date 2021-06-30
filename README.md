@@ -5,7 +5,9 @@ This app demonstrate the use of Laravel fortify for implementing two-factor-auth
 
 ##### To run the app:
 
+- Run the command `composer update` to install all dependencies
 - Define your database connection credential in a `.env` file. Check `.env.example` for guidance
+- Generate app keys by running the command `php artisan key:generate`
 - After setting up the database, run the db migration with the command `php artisan migrate`
 - Run `npm install` to instal all js dependencies
 - You may also need to run `npm run dev` command to compile all js and css dependencies
